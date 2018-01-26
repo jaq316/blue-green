@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  blue-green-poc.web:
+    image: blue-green-poc.web
+    build:
+      context: ./blue-green-poc.web
+      dockerfile: Dockerfile
