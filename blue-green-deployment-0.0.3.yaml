@@ -16,3 +16,6 @@ spec:
           ports:
             - name: http
               containerPort: 80
+          env:
+          - name: DEPLOYMENT_SLOT
+            value: "blue"
