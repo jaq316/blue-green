@@ -10,5 +10,6 @@
     <div class="jumbotron">
         <h1 class="display-3">Slot - @(Environment.GetEnvironmentVariable("DEPLOYMENT_SLOT") ?? "NOT SPECIFIED")</h1>
         <p class="lead">Release date - @System.IO.File.GetLastAccessTime(typeof(IndexModel).Assembly.Location)</p>
+        <p>Test</p>
     </div>
 </div>

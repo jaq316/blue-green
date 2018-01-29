@@ -1,21 +1,21 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: blue-green-0-0-4
+  name: blue-green-0-0-5
 spec:
   replicas: 1
   template:
     metadata:
       labels:
         name: blue-green
-        version: "0.0.4"
+        version: "0.0.5"
     spec:
       containers: 
         - name: blue-green
-          image: jaq316/blue-green:0.0.4
+          image: jaq316/blue-green:0.0.5
           ports:
             - name: http
               containerPort: 80
           env:
           - name: DEPLOYMENT_SLOT
-            value: "yellow"
+            value: "pink"
